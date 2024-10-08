@@ -1,0 +1,120 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+h1 {
+  text-align: center;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.input-column, .output-column {
+  display: flex;
+  flex-direction: column;
+}
+.input-group {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+label {
+  margin-bottom: 10px;
+  color: #bbbbbb;
+  font-weight: bold;
+  font-size: 14px;
+}
+select, input, textarea {
+  padding: 14px;
+  background-color: #252525;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #e0e0e0;
+  font-size: 16px;
+}
+select:focus, input:focus, textarea:focus {
+  border-color: #666;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+.button-group {
+  display: flex;
+  gap: 15px;
+}
+button {
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  color: white;
+  text-transform: uppercase;
+}
+.encrypt-btn {
+  background-color: #007acc;
+}
+.decrypt-btn {
+  background-color: #333;
+}
+.upload-btn {
+  background-color: #444;
+  flex-grow: 1;
+}
+button:hover {
+  background-color: #555;
+}
+.output {
+  padding: 25px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  min-height: 300px;
+  border: 1px solid #333;
+}
+.output h3 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #bbbbbb;
+}
+.download-btn {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #444;
+  width: 100%;
+  border-radius: 8px;
+}
+.download-btn:hover {
+  background-color: #555;
+}
+@media (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
